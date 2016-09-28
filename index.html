@@ -1,0 +1,77 @@
+---
+layout: home
+---
+
+
+<body>
+<!-- CONTENT -->
+<section id="content" role="main">
+    <div class="mainBackground">
+
+        <!-- Text -->
+        <div class="position-absolute">
+            <h2 class="big no-margin"><strong>MAIN TITLE</strong></h2>
+            <h2>SUBTITLE</h2> 
+            <div class="entry-summary">
+               <p>DESCRIPTION</p>
+            </div>
+            <br />
+        </div>
+
+		<!-- Footer Icons -->
+        <div id="socialIcons" role="contentinfo">
+            <ul class="soc-icons">
+                {% if site.facebook_username %}
+                    <li>
+                        <a href="https://facebook.com/{{ site.facebook_username }}" style="
+                        color:#dddddd; target="_blank" title="Facebook">
+                        <i class="fa fa-facebook"></i>
+                        </span>
+                        </a></li>
+                {% endif %}
+                {% if site.twitter_username %}
+                    <li>
+                    <a href="https://twitter.com/{{ site.twitter_username }}" style="
+                    color:#dddddd; target="_blank" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                    </span>
+                    </a></li>
+                {% endif %}
+                {% if site.instagram_username %}
+                    <li>
+                    <a href="https://instagram.com/{{ site.instagram_username }}" style="
+                    color:#dddddd; target="_blank" title="Instagram">
+                    <i class="fa fa-instagram"></i>
+                    </span>
+                    </a></li>
+                {% endif %}
+                {% if site.github_username %}
+                    <li>
+                    <a href="https://github.com/{{ site.github_username }}" style="
+                    color:#dddddd; target="_blank" title="Github">
+                    <i class="fa fa-github"></i>
+                    </span>
+                {% endif %}
+                <li>
+                <a href="mailto:{{ site.email }}" style="
+                color:#dddddd; target="_blank" title="Email">
+                <i class="fa fa-envelope-o"></i></span>
+                </a></li>
+            
+                            
+            </ul>	
+        </div>
+    </div>
+
+    <div>
+        <p>Testing</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+</body>
